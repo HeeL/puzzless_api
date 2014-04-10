@@ -1,0 +1,11 @@
+This is a rack app that introduce an API for puzzless.com. 
+
+
+To Run It Localy
+=================
+
+- `bundle install`
+- Rename and customize config/database.yml.sample
+- Create database
+- Run migrations: `ruby db/migrate.rb`
+- Run the server with `bundle exec rackup config.ru -p 3000`

@@ -1,0 +1,7 @@
+adapter: postgresql
+encoding: utf-8
+database: puzzless_api_development
+pool: 5
+username: postgres
+password: test
+host: localhost

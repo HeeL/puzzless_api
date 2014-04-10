@@ -1,4 +1,6 @@
 source "https://rubygems.org"
 
- gem 'rack'
- gem 'grape'
+gem 'rack'
+gem 'grape'
+gem 'activerecord'
+gem 'pg'
