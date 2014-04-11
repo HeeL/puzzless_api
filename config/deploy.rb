@@ -2,7 +2,7 @@
 lock '3.1.0'
 
 set :application, 'puzzless_api'
-set :repo_url, 'git@github.com:me/puzzless_api.git'
+set :repo_url, 'git@github.com:HeeL/puzzless_api.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
