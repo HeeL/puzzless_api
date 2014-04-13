@@ -1,7 +1,16 @@
 require 'grape'
+require 'grape/rabl'
 
 module Puzzless end
 module Puzzless::Resources end
+
+ROOT_PATH = File.expand_path(File.dirname(__FILE__))
+
+class Puzzless::API < Grape::API
+  use Rack::Config do |env|
+    env['api.tilt.root'] = File.join(ROOT_PATH, 'app', 'views')
+  end
+end
 
 Dir[
   'db/init.rb',
