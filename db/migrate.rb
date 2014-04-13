@@ -1,3 +1,5 @@
+#! /usr/bin/env ruby
+
 require_relative '../boot'
 
 current_dir = File.expand_path(File.dirname(__FILE__))
