@@ -6,7 +6,6 @@ class Puzzless::Resources::Riddles < Grape::API
     end
     get 'list/:category_id', rabl: 'riddles/list' do
       @riddles = Riddle.where(category_id: params[:category_id])
-      [{title: 'Riddles from one category'}]
     end
 
     desc "Return a riddle"
@@ -15,7 +14,6 @@ class Puzzless::Resources::Riddles < Grape::API
     end
     get 'show/:id', rabl: 'riddles/show' do
       @riddle = Riddle.find(params[:id])
-      [{title: 'An old good riddle'}]
     end
   end
 end
