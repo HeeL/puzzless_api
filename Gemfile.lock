@@ -27,6 +27,9 @@ GEM
     capistrano-bundler (1.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
+    capistrano-rvm (0.1.1)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     descendants_tracker (0.0.4)
@@ -96,6 +99,7 @@ DEPENDENCIES
   activerecord
   capistrano (~> 3.1.0)
   capistrano-bundler (~> 1.1.2)
+  capistrano-rvm (~> 0.1.1)
   grape
   grape-rabl
   pg
