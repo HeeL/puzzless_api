@@ -104,4 +104,5 @@ DEPENDENCIES
   grape-rabl
   pg
   rack
+  rake
   unicorn

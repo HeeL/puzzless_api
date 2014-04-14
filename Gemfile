@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 
 gem 'rack'
+gem 'rake'
+
 gem 'grape'
 gem 'grape-rabl'
 

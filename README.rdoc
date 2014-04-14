@@ -6,5 +6,5 @@ This is a rack app that introduce an API for puzzless.com.
 - Run `bundle install`
 - Rename and customize config/database.yml.sample
 - Create database
-- Run migrations: `ruby db/migrate.rb`
+- Run migrations: `bundle exec rake db:migrate`
 - Run the server with `bundle exec rackup config.ru -p 3000`
