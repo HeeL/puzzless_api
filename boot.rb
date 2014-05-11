@@ -1,5 +1,6 @@
 require 'grape'
 require 'grape/rabl'
+require 'grape/kaminari'
 
 module Puzzless end
 module Puzzless::Resources end

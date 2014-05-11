@@ -5,6 +5,7 @@ gem 'rake'
 
 gem 'grape'
 gem 'grape-rabl'
+gem 'grape-kaminari'
 
 gem 'activerecord'
 gem 'pg'

@@ -1,11 +1,14 @@
 class Puzzless::Resources::Riddles < Grape::API
+  include Grape::Kaminari
+  paginate per_page: 30, max_per_page: 30
+
   resource :riddles do
     desc "Return a list of riddles from specified category"
     params do
       requires :category_id, type: Integer, desc: "Category id"
     end
     get 'list/:category_id', rabl: 'riddles/list' do
-      @riddles = Riddle.where(category_id: params[:category_id])
+      @riddles = paginate(Riddle.where(category_id: params[:category_id]))
     end
 
     desc "Return a riddle"
