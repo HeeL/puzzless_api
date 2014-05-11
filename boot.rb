@@ -1,6 +1,7 @@
 require 'grape'
 require 'grape/rabl'
 require 'grape/kaminari'
+require 'rack/contrib/jsonp'
 
 module Puzzless end
 module Puzzless::Resources end
@@ -8,6 +9,8 @@ module Puzzless::Resources end
 ROOT_PATH = File.expand_path(File.dirname(__FILE__))
 
 class Puzzless::API < Grape::API
+  use Rack::JSONP
+
   use Rack::Config do |env|
     env['api.tilt.root'] = File.join(ROOT_PATH, 'app', 'views')
   end

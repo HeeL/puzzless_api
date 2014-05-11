@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem 'rack'
 gem 'rake'
+gem 'rack-contrib'
 
 gem 'grape'
 gem 'grape-rabl'
