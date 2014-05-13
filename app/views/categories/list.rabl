@@ -1,3 +1,3 @@
 collection @categories
 
-attributes :title, :id
+attributes :title, :id, :count_riddles
