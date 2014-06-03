@@ -1,6 +1,6 @@
 class Puzzless::Resources::Riddles < Grape::API
   include Grape::Kaminari
-  paginate per_page: 30, max_per_page: 30
+  paginate per_page: 50, max_per_page: 70
 
   resource :riddles do
     desc "Return a list of riddles from specified category"
